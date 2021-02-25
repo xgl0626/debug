@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="bg_grey" tools:ignore="ResourceName">#F2F3F8</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="status_bar_color">#E5E5E5</color>
+    <!--    透明状态栏-->
+    <color name="transparentBackground" tools:ignore="ResourceName">#00000000</color>
+    <!--    person 界面退出登录字体颜色-->
+    <color name="tab_selected_background_color" tools:ignore="ResourceName">#F0F4FD</color>
+    <!--    问题tab选中颜色-->
+    <color name="tab_selected_color" tools:ignore="ResourceName">#15315B</color>
+    <!--    问题tab未选中颜色-->
+    <color name="tab_unselected_color" tools:ignore="ResourceName">#15315B</color>
+    <color name="person_back_login" tools:ignore="DuplicateDefinition,ResourceName">#2A4E84</color>
+    <color name="black">#000000</color>
+    <color name="white">#fff</color>
+    <color name="blue">#87CEFA</color>
+    <color name="blueDark">#6495ED</color>
+    <color name="blue2">#63B8FF</color>
+    <color name="tv">#ff000000</color>
+    <color name="tv_two">#ff9b9b9b</color>
+
+</resources>

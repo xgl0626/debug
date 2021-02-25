@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">d2doctor</string>
+    <string name="title_home">Home</string>
+    <string name="title_person">person</string>
+    <string name="title_message">Message</string>
+    <string name="menu_back">返回上一界面</string>
+    <string name="menu_share_article">分享文章</string>
+    <string name="menu_message_add_friend">添加好友</string>
+</resources>
