@@ -182,8 +182,8 @@ class ChatActivity : BaseActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.article_menu, menu)
-        return true
-    }
+//    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+//        menuInflater.inflate(R.menu.article_menu, menu)
+//        return true
+//    }
 }

@@ -80,8 +80,8 @@ class MessagesFragmentAdapter(val activity: Activity) :
                 val viewHolder = holder as MessageViewHolder
                 viewHolder.apply {
                     Glide.with(avatar)
-                        .applyDefaultRequestOptions(RequestOptions().placeholder(R.drawable.ic_image))
-                        .load(R.drawable.ic_image).into(avatar)
+                        .applyDefaultRequestOptions(RequestOptions().placeholder(R.mipmap.head_default))
+                        .load(R.mipmap.head_default).into(avatar)
                     author.text = data[position].title
                 }
                 viewHolder.itemView.setOnClickListener {

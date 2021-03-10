@@ -78,8 +78,8 @@ class MyFriendAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 val viewHolder = holder as AnswerViewHolder
                 viewHolder.apply {
                     Glide.with(avatar)
-                        .applyDefaultRequestOptions(RequestOptions().placeholder(R.drawable.ic_image))
-                        .load(R.drawable.ic_image).into(avatar)
+                        .applyDefaultRequestOptions(RequestOptions().placeholder(R.mipmap.head_default))
+                        .load(R.mipmap.head_default).into(avatar)
                     author.text = data[position].userName
                 }
                 viewHolder.itemView.setOnClickListener {

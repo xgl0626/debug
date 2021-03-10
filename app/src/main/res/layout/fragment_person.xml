@@ -32,7 +32,7 @@
         android:id="@+id/iv_person_avator"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/ic_acticity_login_name"
+        android:background="@mipmap/head_default"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintHorizontal_bias="0.145"
@@ -51,26 +51,26 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.142" />
 
     <TextView
         android:id="@+id/tv_person_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
         android:gravity="center|left"
         android:hint="想说点什么"
         android:maxLines="1"
         android:textColor="@color/white"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.213" />
 
     <ImageView
         android:id="@+id/iv_person"
@@ -162,7 +162,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="设置"
+            android:text="关于我们"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </RelativeLayout>
@@ -184,7 +184,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="关于我们"
+            android:text="我的钱包"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </RelativeLayout>

@@ -34,13 +34,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_receive_friend" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/srl_main"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         app:layout_anchorGravity="center"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintStart_toStartOf="parent"
