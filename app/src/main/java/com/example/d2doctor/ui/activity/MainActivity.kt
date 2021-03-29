@@ -8,10 +8,7 @@ import androidx.viewpager.widget.ViewPager
 import com.example.d2doctor.R
 import com.example.d2doctor.ui.adapter.FragmentsAdapter
 import com.example.d2doctor.ui.base.BaseActivity
-import com.example.d2doctor.ui.fragment.DataFragment
-import com.example.d2doctor.ui.fragment.HomeFragment
-import com.example.d2doctor.ui.fragment.MessageFragment
-import com.example.d2doctor.ui.fragment.PersonFragment
+import com.example.d2doctor.ui.fragment.*
 import com.example.d2doctor.utils.Toast
 import com.example.weying.utils.ImmersedStatusbarUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -32,7 +29,7 @@ class MainActivity : BaseActivity(), ViewPager.OnPageChangeListener {
     private fun initViewPager() {
         val fragmentList = ArrayList<Fragment>()
         fragmentList.add(HomeFragment())
-        fragmentList.add(DataFragment())
+        fragmentList.add(FeatureDBFragment())
         fragmentList.add(MessageFragment())
         fragmentList.add(PersonFragment())
         val fragmentAdapter = FragmentsAdapter(fragmentList, supportFragmentManager, 3)

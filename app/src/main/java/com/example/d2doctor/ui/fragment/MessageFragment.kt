@@ -17,8 +17,6 @@ import com.example.d2doctor.ui.activity.ChatActivity
 import com.example.d2doctor.ui.activity.ReceiveFriendActivity
 import com.example.d2doctor.ui.adapter.MessagesFragmentAdapter
 import com.example.d2doctor.ui.viewmodel.MessageViewModel
-import kotlinx.android.synthetic.main.fragment_home.recyclerView
-import kotlinx.android.synthetic.main.fragment_home.srl_main
 import kotlinx.android.synthetic.main.fragment_messages.*
 
 

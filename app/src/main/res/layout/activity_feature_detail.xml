@@ -16,7 +16,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:srcCompat="@drawable/ic_common_toolbar"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -26,7 +27,9 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_message_add_friend" />
+        app:srcCompat="@drawable/ic_message_add_friend"
+        android:layout_marginRight="16dp"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/textView13"
@@ -38,7 +41,7 @@
         android:padding="16dp"
         android:background="@drawable/shape_text_back_ground"
         android:maxLines="5"
-        tools:text="这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述这里是问题详细描述"
+        android:text="尽管Android系统提供了不少控件，但是有很多酷炫效果仍然是系统原生控件无法实现的。好在Android允许自定义控件，来弥补原生控件的不足。但是在很多初学者看来，自定义View似乎很难掌握。其中有很大一部分原因是我们平时看到的自定义View使用中，有多种形式，有的寥寥数笔，有的逻辑很复杂，有的直接继承View或ViewGroup，有的却直接继承系统的原生控件，有的可以直接使用系统定义的属性，而有的却自定义了自己的属性......所以不明白使用规则的开发者，很容易被这只“纸老虎”吓到。"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -52,7 +55,8 @@
         android:textColor="@color/blueDark"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -63,7 +67,8 @@
         android:textColor="@color/blueDark"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -85,9 +90,11 @@
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:layout_marginLeft="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_activity_detail"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         tools:listitem="@layout/item_hunter"
