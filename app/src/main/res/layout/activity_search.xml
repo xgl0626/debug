@@ -8,13 +8,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_common_toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="Bug小帮手"
+        app:title="资料搜索"
         app:titleTextColor="@color/black" />
 
     <EditText

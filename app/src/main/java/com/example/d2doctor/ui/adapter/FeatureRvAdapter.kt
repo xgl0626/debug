@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.d2doctor.R
 import com.example.d2doctor.bean.Feature
+import com.example.d2doctor.ui.activity.FeatureDetail2Activity
 import com.example.d2doctor.ui.activity.FeatureDetailActivity
 import kotlinx.android.synthetic.main.item_feature.view.*
 
@@ -33,7 +34,7 @@ class FeatureRvAdapter(val activity: AppCompatActivity) : RecyclerView.Adapter<R
         }
         holder.itemView.setOnClickListener {
             activity.startActivity(
-                Intent(activity, FeatureDetailActivity::class.java)
+                Intent(activity, FeatureDetail2Activity::class.java)
             )
         }
     }

@@ -91,12 +91,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.359"
         tools:layout_editor_absoluteX="0dp">
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_person_data"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:text="个人信息"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -111,14 +116,19 @@
         android:paddingBottom="9dp"
         app:layout_constraintBottom_toBottomOf="@+id/iv_person"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432"
-        tools:layout_editor_absoluteX="-27dp">
-
+        app:layout_constraintVertical_bias="0.419"
+        tools:layout_editor_absoluteX="0dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_friend_list"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:text="好友列表"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -128,18 +138,23 @@
         android:id="@+id/rl_person_order"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="335dp"
         android:foreground="?android:selectableItemBackground"
         android:paddingTop="9dp"
         android:paddingBottom="9dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_order"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:text="我的订单"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -150,19 +165,24 @@
         android:id="@+id/rl_person_set"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="448dp"
+        android:layout_marginTop="420dp"
         android:foreground="?android:selectableItemBackground"
         android:paddingTop="9dp"
         android:paddingBottom="9dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_about_me"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
             android:text="关于我们"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </RelativeLayout>
@@ -176,15 +196,20 @@
         android:paddingBottom="9dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572"
+        app:layout_constraintVertical_bias="0.54"
         tools:layout_editor_absoluteX="0dp">
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_money_bag"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
             android:text="我的钱包"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
             android:textColor="@color/black"
             android:textSize="18sp" />
     </RelativeLayout>

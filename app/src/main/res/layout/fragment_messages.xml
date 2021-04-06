@@ -18,15 +18,21 @@
         app:title="消息中心"
         app:titleTextColor="@color/black" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.8"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/toolBar" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_receive_friend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:gravity="right|center"
+        android:gravity="left"
         android:paddingTop="10dp"
-        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
         android:paddingBottom="10dp"
         android:text="好友申请"
         android:textColor="@color/black"
@@ -35,9 +41,11 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/white"
+        android:layout_height="1dp"
+        android:alpha="0.8"
+        android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="@+id/tv_receive_friend" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout

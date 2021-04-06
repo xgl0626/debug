@@ -6,5 +6,5 @@ package com.example.d2doctor.bean
  */
 data class FeatureDB(
     var dbName: String = "Android",
-    var backColor: String = "#3DDC84"
+    var backColor: String = "#6495ED"
 )

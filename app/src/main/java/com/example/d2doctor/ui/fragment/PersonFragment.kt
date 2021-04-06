@@ -18,9 +18,7 @@ import cn.jpush.im.android.api.callback.GetUserInfoCallback
 import cn.jpush.im.android.api.model.UserInfo
 import com.example.d2doctor.R
 import com.example.d2doctor.config.AppConfig
-import com.example.d2doctor.ui.activity.LoginActivity
-import com.example.d2doctor.ui.activity.MyFriendActivity
-import com.example.d2doctor.ui.activity.PersonDataActivity
+import com.example.d2doctor.ui.activity.*
 import com.example.d2doctor.ui.viewmodel.PersonViewModel
 import com.example.d2doctor.utils.ClickButtonAnimatorUtils
 import com.example.d2doctor.utils.MyApplication
@@ -29,7 +27,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.fragment_person.*
 import kotlinx.android.synthetic.main.item_message.*
 
-class PersonFragment : Fragment(),View.OnClickListener {
+class PersonFragment : Fragment(), View.OnClickListener {
 
     private lateinit var personViewModel: PersonViewModel
     private var rememberPassword: SharedPreferences = MyApplication.context.getSharedPreferences(
@@ -74,6 +72,12 @@ class PersonFragment : Fragment(),View.OnClickListener {
                     }
                 }
             })
+        rl_person_set.setOnClickListener {
+            changeToActivity(AboutMeActivity())
+        }
+        rl_person_about_me.setOnClickListener {
+            changeToActivity(MyBagActivity())
+        }
         tv_back_login.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 ClickButtonAnimatorUtils.buttonAnim(tv_back_login,

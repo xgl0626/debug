@@ -6,15 +6,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolBar"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_common_toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="接受好友添加"
+        app:title="好友申请"
         app:titleTextColor="@color/black" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout

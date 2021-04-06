@@ -9,16 +9,17 @@
         android:id="@+id/tv_rf_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:padding="5dp"
         android:text="姓名"
-        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
-
 
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -32,27 +33,31 @@
         app:layout_constraintVertical_bias="0.049" />
 
 
-
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_rf_receive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/shape_round_corner_blue"
         android:text="接受"
-        android:id="@+id/tv_rf_receive"
+        android:padding="5dp"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_rf_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.812"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.64" />
+
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_rf_refused"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="拒绝"
-        android:id="@+id/tv_rf_refused"
+        android:padding="5dp"
+        android:background="@drawable/shape_item_feature"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_rf_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.98"

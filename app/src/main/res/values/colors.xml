@@ -18,7 +18,7 @@
     <color name="blueDark">#6495ED</color>
     <color name="blue2">#63B8FF</color>
     <color name="tv">#ff000000</color>
-    <color name="tv_two">#ff9b9b9b</color>
+    <color name="tv_two">#00BCD4</color>
     <color name="gray">#c9c9c9</color>
 
 </resources>

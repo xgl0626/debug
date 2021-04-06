@@ -6,17 +6,15 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolBar"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/bg_grey"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_common_toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:title="个人信息"
-        app:navigationIcon="@drawable/ic_common_toolbar"
-        app:titleTextColor="@color/black"
-        tools:layout_editor_absoluteX="0dp" />
+        app:titleTextColor="@color/black" />
 
     <EditText
         android:id="@+id/et_data_name"

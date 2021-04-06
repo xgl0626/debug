@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Debug</string>
+    <string name="app_name">bug小帮手</string>
     <string name="title_home">Home</string>
     <string name="title_person">person</string>
     <string name="title_message">Message</string>

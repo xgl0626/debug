@@ -51,11 +51,11 @@ class FeatureDBFragment: Fragment() {
             FeatureDB(),
             FeatureDB(
                 dbName = "Python",
-                backColor = "#DA70D6"
+                backColor = "#ffffff"
             ),
             FeatureDB(
                 dbName = "Kotllin",
-                backColor = "#6495ED"
+                backColor = "#FFF176"
             ),
             FeatureDB(
                 dbName = "C++",

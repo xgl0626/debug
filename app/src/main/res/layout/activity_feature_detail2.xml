@@ -83,23 +83,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_fragment_feature_db_search"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="有意向的人"
-        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_round_corner_blue"
+        android:gravity="center"
+        android:text="我来debug"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
-        android:layout_marginLeft="8dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_activity_detail"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        tools:listitem="@layout/item_hunter"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        tools:layout_editor_absoluteX="-16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

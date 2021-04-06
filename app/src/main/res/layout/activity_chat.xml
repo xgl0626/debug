@@ -8,13 +8,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/bg_grey"
+        android:layout_height="40dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_common_toolbar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:title="用户"
+        app:title="wxqwxq"
         app:titleTextColor="@color/black"
         tools:layout_editor_absoluteX="0dp" />
 

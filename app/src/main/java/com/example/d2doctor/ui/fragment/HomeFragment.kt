@@ -42,12 +42,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun initClick() {
-//        et_fragment_home_search.setOnClickListener {
-//            changeToActivity(SearchActivity())
-//        }
-        iv_fragment_home_search.setOnClickListener {
-            startActivity(Intent(this.context, SearchActivity::class.java))
-        }
+
     }
 
     private fun initView() {
@@ -69,24 +64,11 @@ class HomeFragment : Fragment() {
             )
             vp_home_banner.adapter = bannerAdapter
         }
-//        AddIconImage.setImageViewToEditText(R.drawable.ic_search, et_fragment_home_search, 1)
-//        val layoutManager = LinearLayoutManager(context)
-//        recyclerView.layoutManager = layoutManager
-//        messageItemAdapter = this.context?.let { HomeMessagesAdapter(it) }
-//        recyclerView.adapter = messageItemAdapter
 
     }
 
     private fun initData() {
         viewModel.getHomeData()
-//        srl_main.setOnRefreshListener {
-//            viewModel.getHomeData()
-//        }
-//        viewModel.getHomeData()
-//        viewModel.homeMessageData.observe(viewLifecycleOwner, Observer {
-//            messageItemAdapter?.addData(it)
-//            srl_main.isRefreshing = false
-//        })
     }
 
     private fun changeToActivity(activity: Activity) {
