@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import cn.jiguang.api.JCoreInterface
@@ -56,6 +57,7 @@ class PersonFragment : Fragment(), View.OnClickListener {
         iv_person_avator.setOnClickListener(this)
         rl_person_single_data.setOnClickListener(this)
         rl_person_friend_list.setOnClickListener(this)
+        rl_person_order.setOnClickListener(this)
     }
 
     private fun initData() {
@@ -73,10 +75,10 @@ class PersonFragment : Fragment(), View.OnClickListener {
                 }
             })
         rl_person_set.setOnClickListener {
-            changeToActivity(AboutMeActivity())
+            changeToActivity(AboutMeActivity::class.java)
         }
         rl_person_about_me.setOnClickListener {
-            changeToActivity(MyBagActivity())
+            changeToActivity(MyBagActivity::class.java)
         }
         tv_back_login.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -84,7 +86,7 @@ class PersonFragment : Fragment(), View.OnClickListener {
                     object : ClickButtonAnimatorUtils.AnimEndCallBack {
                         override fun callback() {
                             JMessageClient.logout()
-                            changeToActivity(LoginActivity())
+                            changeToActivity(LoginActivity::class.java)
                             activity?.finish()
                         }
                     })
@@ -92,8 +94,8 @@ class PersonFragment : Fragment(), View.OnClickListener {
         }
     }
 
-    private fun changeToActivity(activity: Activity) {
-        val intent = Intent(this.activity, activity::class.java)
+    private fun changeToActivity(activityClass: Class<out AppCompatActivity>) {
+        val intent = Intent(this.activity, activityClass)
         startActivity(intent)
     }
 
@@ -103,10 +105,13 @@ class PersonFragment : Fragment(), View.OnClickListener {
                 this.activity?.let { AvatarUtils.choicePhoto(it) }
             }
             R.id.rl_person_single_data -> {
-                changeToActivity(PersonDataActivity())
+                changeToActivity(PersonDataActivity::class.java)
             }
             R.id.rl_person_friend_list -> {
-                changeToActivity(MyFriendActivity())
+                changeToActivity(MyFriendActivity::class.java)
+            }
+            R.id.rl_person_order -> {
+                changeToActivity(MyFeatureActivity::class.java)
             }
         }
     }

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.d2doctor.R
 import com.example.d2doctor.bean.Feature
 import com.example.d2doctor.ui.adapter.FeatureRvAdapter
+import com.example.d2doctor.ui.adapter.FeatureRvAdapter.Companion.NO_BUTTON
 import kotlinx.android.synthetic.main.activity_search.*
 
 /**
@@ -23,7 +24,7 @@ class SearchActivity :AppCompatActivity(){
     }
 
     private fun initView() {
-        val adapter = FeatureRvAdapter(this)
+        val adapter = FeatureRvAdapter(this, NO_BUTTON)
         adapter.dataList = listOf(
             Feature(
                 nickName = "RayJoe",
