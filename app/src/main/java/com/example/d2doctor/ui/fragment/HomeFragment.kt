@@ -11,9 +11,11 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.d2doctor.R
+import com.example.d2doctor.ui.activity.ReleaseFeatureActivity
 import com.example.d2doctor.ui.activity.SearchActivity
 import com.example.d2doctor.ui.adapter.BannerAdapter
 import com.example.d2doctor.ui.adapter.FeatureRvAdapter
+import com.example.d2doctor.ui.adapter.FeatureRvAdapter.Companion.NO_BUTTON
 import com.example.d2doctor.ui.adapter.HomeMessagesAdapter
 import com.example.d2doctor.ui.viewmodel.HomeViewModel
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -42,12 +44,19 @@ class HomeFragment : Fragment() {
     }
 
     private fun initClick() {
-
+        iv_add.setOnClickListener {
+            startActivity(
+                Intent(
+                    this.context,
+                    ReleaseFeatureActivity::class.java
+                )
+            )
+        }
     }
 
     private fun initView() {
         rv_fragment_home.layoutManager = LinearLayoutManager(this.context)
-        adapter = FeatureRvAdapter(this.activity as AppCompatActivity)
+        adapter = FeatureRvAdapter(this.activity as AppCompatActivity, NO_BUTTON)
         rv_fragment_home.adapter = adapter
         viewModel.homeMessageData.observe(this.viewLifecycleOwner) {
             it?.let {

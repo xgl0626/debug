@@ -7,5 +7,5 @@
     <string name="menu_back">返回上一界面</string>
     <string name="menu_share_article">分享文章</string>
     <string name="menu_message_add_friend">添加好友</string>
-    <string name="string_question">Android中静态广播接收器和动态广播接收器的区别，后者如何实现Receiver与控件的通信，前者的优势在哪里</string>
+    <string name="string_question">Android中静态广播接收器和动态广播接收器的区别，后者如何实现Receiver与控件的通信，前者的优势在哪里，为什么我静态注册的广播接收器无法开机启动，为啥我静态注册的的广播接收器不可以是一个内部类？如果不是内部类，我又不能设置它的构造函数，那那怎么通信啊，我的广播接收器不能通知Activity或者Service还有啥作用</string>
 </resources>

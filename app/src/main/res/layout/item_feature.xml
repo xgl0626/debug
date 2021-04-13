@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    android:paddingBottom="5dp"
     android:background="@drawable/shape_item_feature"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:paddingBottom="5dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -28,13 +28,13 @@
 
     <TextView
         android:id="@+id/tv_featrue_nickname"
-        android:textSize="16dp"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="16dp"
         android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="RayleighZ" />
@@ -73,9 +73,21 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:textColor="@color/blueDark"
         android:text="2021/1/24"
+        android:textColor="@color/blueDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_feature_operate"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:background="@drawable/shape_round_corner_blue"
+        android:text="评价"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_feature_item_price"
+        app:layout_constraintEnd_toEndOf="@+id/tv_feature_item_content"
+        app:layout_constraintTop_toTopOf="@+id/tv_feature_item_price" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

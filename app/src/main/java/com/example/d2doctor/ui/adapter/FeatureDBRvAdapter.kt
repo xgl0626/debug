@@ -1,5 +1,6 @@
 package com.example.d2doctor.ui.adapter
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.d2doctor.R
 import com.example.d2doctor.bean.FeatureDB
+import com.example.d2doctor.ui.activity.DataBaseActivity
 import kotlinx.android.synthetic.main.item_feature_db.view.*
 
 /**
@@ -28,6 +30,11 @@ class FeatureDBRvAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         itemView.apply {
             tv_feature_db_item.text = dataDB.dbName
             iv_feature_db_item.setColorFilter(Color.parseColor(dataDB.backColor))
+        }
+        itemView.setOnClickListener {
+            itemView.context.startActivity(
+                Intent(itemView.context, DataBaseActivity::class.java)
+            )
         }
     }
 
