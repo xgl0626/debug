@@ -1,12 +1,19 @@
 package com.example.d2doctor.ui.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.d2doctor.R
 import com.example.d2doctor.bean.Feature
+import com.example.d2doctor.network.ApiGenerator
+import com.example.d2doctor.network.ApiService
+import com.example.d2doctor.network.safeSubscribeBy
+import com.example.d2doctor.network.setSchedulers
 import com.example.d2doctor.ui.adapter.FeatureRvAdapter
 import com.example.d2doctor.ui.adapter.FeatureRvAdapter.Companion.NO_BUTTON
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_search.*
 
 /**
@@ -40,6 +47,13 @@ class SearchActivity :AppCompatActivity(){
             )
 
         )
+
+        ApiGenerator.getApiService(ApiService::class.java)
+            .login()
+            .setSchedulers()
+            .safeSubscribeBy{
+
+            }
         rv_activity_search.adapter = adapter
         rv_activity_search.layoutManager = LinearLayoutManager(this)
         adapter.notifyDataSetChanged()
